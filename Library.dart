@@ -22,11 +22,10 @@ void main () {
   print('Total de livros: $totalBooks');
 
 
-  var imposto = (mensality, totalBooks) {
-    return mensality + totalBooks;
-  };
+  var calcularImposto = (double mensalidade, int totalLivros) => mensalidade + totalLivros;
 
-  print('Imposto: ${imposto(mensality, totalBooks)}');
+
+  print('Imposto: ${calcularImposto(mensality, totalBooks)}');
   print('Os livros estão disponíveis $isBookAvaliable');
   print('Livros:');
   livro.forEach((livro) {
